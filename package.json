@@ -1,0 +1,27 @@
+{
+  "name": "giveme4app",
+  "version": "1.0.0",
+  "description": "A game that is similar to Connect 4.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maxrod98/Connect4App.git"
+  },
+  "keywords": [
+    "connect4",
+    "giveme4"
+  ],
+  "author": "Max Torresdey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maxrod98/Connect4App/issues"
+  },
+  "homepage": "https://github.com/Maxrod98/Connect4App#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
