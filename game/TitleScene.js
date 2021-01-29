@@ -21,8 +21,11 @@ class TitleScene extends Phaser.Scene {
         this.gridLayout = new GridLayout(this, this.width, this.height, 6, 6, 0.05);
         //this.gridLayout.showGrid();
 
-        this.buttonToMultiplayer = new Button(this, 0, 0, this.gridLayout.chipSize * this.gridLayout.numCols, this.gridLayout.chipSize, "2 Players Game", "0x178a94", this.switchToMultiplayer.bind(this), this.height / 20);
-        this.gridLayout.insertAt(this.buttonToMultiplayer, 0, 1).update();
+        //this.buttonToMultiplayer = new Button(this, 0, 0, this.gridLayout.chipSize * this.gridLayout.numCols, this.gridLayout.chipSize, "2 Players Game", "0x178a94", this.switchToMultiplayer.bind(this), this.height / 20);
+        //this.gridLayout.insertAt(this.buttonToMultiplayer, 0, 1).update();
+
+        this.buttonToOfflineMultiplayer = new Button(this, 0, 0, this.gridLayout.chipSize * this.gridLayout.numCols, this.gridLayout.chipSize, "Offline 2 Players Game", "0x178a94", this.switchToOfflineMultiplayer.bind(this), this.height / 20);
+        this.gridLayout.insertAt(this.buttonToOfflineMultiplayer, 0, 1).update();
 
         this.buttonToSinglePlayer = new Button(this, 0, 0, this.gridLayout.chipSize * this.gridLayout.numCols, this.gridLayout.chipSize, "Play Against PC", "0x178a94", this.switchToPCvsPlayer.bind(this), this.height / 20);
         this.gridLayout.insertAt(this.buttonToSinglePlayer, 0, 3.5).update();
@@ -55,6 +58,10 @@ class TitleScene extends Phaser.Scene {
         })
         //var sc = this.game.scene.getScene("GameScene");
         //sc.scene.restart();
+        this.game.scene.switch("TitleScene", "GameScene");
+    }
+
+    switchToOfflineMultiplayer(){
         this.game.scene.switch("TitleScene", "GameScene");
     }
 
