@@ -1,5 +1,7 @@
 # Connect4App
 
-My first app developed ever, it turned out to be a 1-2 week project while having no previous experience in javascript. It was totally worth
+My first hands-in experience working on an AI that was very successful at beating human players, check the file AI.js.
+
+DEMO: https://giveme4.herokuapp.com/
 
 ![](screenshot.png)
