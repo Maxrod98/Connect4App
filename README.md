@@ -1,6 +1,6 @@
 # Connect4App
 
-My first hands-in experience working on an AI that was very successful at beating human players, check the file AI.js.
+My first web app published, with over 500 downloads.
 
 Download app here: https://play.google.com/store/apps/details?id=give.mefour&hl=en_US&gl=US
 
